@@ -1,0 +1,46 @@
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  gap: 10px;
+  margin: 10px;
+  z-index: 1;
+}
+
+section {
+  height: 200px;
+  width: 300px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 0 8px black;
+  transition-duration: 0.5s;
+}
+
+section:hover {
+  height: 230px;
+  width: 330px;
+}
+
+section img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+section div input {
+  border: none;
+  background: transparent;
+  color: aliceblue;
+
+}
+
+section div {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  background-color: #1b834acc;
+  color: aliceblue;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
