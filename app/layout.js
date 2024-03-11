@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Conoce Cuba Primero"
@@ -51,6 +52,7 @@ export default function RootLayout({ children }) {
             </nav>
         </header>
         {children}
+        <Analytics />
         <footer>
             <p>Advertencia: En este grupo no se compra ni revende nada, no se hacen comentarios politicos,religiosos,ni discriminatorios.Esto es solo para hablar de los viajes y las experiencias. </p>
             <p><u>Siguenos en nuestra redes sociales:</u></p>
